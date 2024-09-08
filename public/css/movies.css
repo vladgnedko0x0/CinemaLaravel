@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../backgrounds/homeBG.jpg');
+    background-size: auto;
+}
+
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.movie {
+    margin-right: 15px;
+    overflow: hidden;
+    height: 250px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.overblock {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 250px;
+    transition: 0.5s ease-out;
+    background: none;
+    z-index: 0;
+}
+
+.movie>.movieName {
+    text-align: center;
+    transition: 0.7s ease-out;
+    z-index: 3;
+}
+
+.movieNameP {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 3;
+}
+
+.movie:hover .movieName {
+    transform: translateY(calc(-50px - 25%));
+}
+
+.movie:hover .overblock {
+    background-color: rgba(255, 166, 0, 0.814);
+}
+
+.movie>.image {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.movie:hover {
+    scale: 1.04;
+    box-shadow: 11px 7px 16px -4px rgba(0, 0, 0, 0.75);
+    transform: rotate(2deg);
+}
+
+.c>.pDiv {
+    padding-left: 5px;
+    padding-right: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 0;
+    background-color: rgb(15, 170, 33);
+    overflow: hidden;
+    z-index: 2;
+    transition: 0.7s ease-in-out;
+    color: white;
+    font-weight: bold;
+}
+
+.c:hover>.pDiv {
+    height: 20px;
+    width: 110px;
+}
+
+.categoryes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(1, 1, 119);
+    padding-top: 5px;
+    border-radius: 10px;
+    margin-top: 8em;
+}
+
+.category {
+    background-color: rebeccapurple;
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    border-radius: 15px;
+    transition: 0.8s ease-in-out;
+}
+
+.category:hover {
+    scale: 1.04;
+    box-shadow: 11px 7px 16px -4px rgba(0, 0, 0, 0.75);
+    background-color: rgb(128, 72, 185);
+}
+
+.categoryName {
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.adminPanel {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+}
+
+.menuM {
+    position: relative;
+    width: 25%;
+}
+
+.title {
+    text-align: center;
+    height: 100%;
+}
+
+.adminMenu {
+    background-color: yellow;
+    position: absolute;
+    top: 30px;
+    left: 25%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+.menuM:hover .adminMenu {
+    width: 50%;
+    height: 100px;
+}
+
+.adminMenu>li {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+}
+.aHref{
+    transition: 0.5s ease-in-out;
+}
+.adminMenu>li:hover .aHref{
+    color: yellow;
+}
+.adminMenu>li:hover{
+    background-color: blue;
+}
+
+.adminMenu>li>a {
+    text-decoration: none;
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+.btnBack {
+    position: absolute;
+    top: 15%;
+    left: 3%;
+}
+
+.arrow {
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+.arrow:hover {
+    width: 2em;
+    height: 2em;
+}
+
+.menu {
+    top: 14%;
+    left: 8%;
+    font-size: 2em;
+    font-weight: bold;
+    width: 15%;
+}
+
+.menuItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.menuItems>a {
+    text-decoration: none;
+    color: white;
+
+}
+.menuItems>a{
+    transition: 0.3s ease-in-out;
+}
+.menuItems>a:hover{
+    color: rgb(255, 172, 172);
+}

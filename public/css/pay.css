@@ -1,0 +1,102 @@
+body {
+    /* Created with https://www.css-gradient.com */
+    background: #95A8EF;
+    background: -webkit-linear-gradient(top left, #95A8EF, #BDA562);
+    background: -moz-linear-gradient(top left, #95A8EF, #BDA562);
+    background: linear-gradient(to bottom right, #95A8EF, #BDA562);
+}
+
+.pay-form {
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 20px;
+}
+
+.form>form {
+    border: 1px solid blue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 11px 11px 30px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 11px 11px 30px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 11px 30px -4px rgba(0,0,0,0.75);
+    scale: 2;
+}
+
+.form-filed {
+    margin-bottom: 10px;
+}
+
+.form-filed>input {
+    height: 15%;
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid blue;
+}
+.btnSubmit{
+    display: flex;
+    justify-content: space-between;
+}
+.btnSubmit>div>input{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: 0.5px dashed blue;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.btnSubmit>div>input:hover{
+    color: rgb(3, 165, 3);
+    font-size: 1.01em;
+}
+.btnBack{
+    position: absolute;
+    top: 5%;
+    left: 3%;
+}
+.arrow{
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+.arrow:hover{
+    width: 2em;
+    height: 2em;
+}
+.menu{
+    top:4%;
+    left: 8%;
+    font-size: 2em;
+    font-weight: bold;
+    width: 15%;
+}
+.menuItems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.menuItems>a{
+    text-decoration: none;
+    color: white;
+   
+}
+.menuItems>a{
+    transition: 0.3s ease-in-out;
+}
+.menuItems>a:hover{
+    color: rgb(255, 172, 172);
+}

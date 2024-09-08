@@ -1,0 +1,21 @@
+
+.errors{
+    position: absolute;
+    width: 500px;
+    min-height: 35px;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    top: 1%;
+    left: 32%;
+    background: rgba(255, 255, 255, 0.955);
+    box-shadow: 9px 9px 13px -1px rgba(0,0,0,0.51);
+    border-radius: 10px;
+    color: rgb(176, 0, 0);
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.succsess{
+    color: lime;
+}

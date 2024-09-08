@@ -1,0 +1,102 @@
+body {
+    /* Created with https://www.css-gradient.com */
+    background: #95A8EF;
+    background: -webkit-linear-gradient(top left, #95A8EF, #BDA562);
+    background: -moz-linear-gradient(top left, #95A8EF, #BDA562);
+    background: linear-gradient(to bottom right, #95A8EF, #BDA562);
+}
+
+.tickets {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tickets-table{
+    width: 50%;
+    height: 50%;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.btnBack {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+}
+
+.arrow {
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+.arrow:hover {
+    width: 2em;
+    height: 2em;
+}
+
+.menu {
+    top: 4%;
+    left: 8%;
+    font-size: 2em;
+    font-weight: bold;
+    width: 15%;
+}
+
+.menuItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.menuItems>a {
+    text-decoration: none;
+    color: white;
+
+}
+.menuItems>a{
+    transition: 0.3s ease-in-out;
+}
+.menuItems>a:hover{
+    color: rgb(255, 172, 172);
+}

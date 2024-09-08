@@ -1,0 +1,188 @@
+body {
+    /* Created with https://www.css-gradient.com */
+    background: #95A8EF;
+    background: -webkit-linear-gradient(top left, #95A8EF, #BDA562);
+    background: -moz-linear-gradient(top left, #95A8EF, #BDA562);
+    background: linear-gradient(to bottom right, #95A8EF, #BDA562);
+}
+
+.profile {
+    height: 100%;
+    width: 100%;
+}
+
+.data {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.userData {
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25%;
+    height: 15%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10%;
+}
+
+.dataContainer {
+    width: 100%;
+    height: calc(100%/3);
+    display: flex;
+    justify-content: space-between;
+}
+
+.dataContainer>div {
+    width: 50%;
+}
+
+.userSessions {
+    margin-top: 3%;
+}
+
+.table-header {
+    font-size: 2em;
+    margin-bottom: 1%;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    margin-top: 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.profileFooter {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+}
+
+.logout {
+    margin-left: 4%;
+    font-size: 1.7em;
+    width: 10%;
+    height: 100%;
+    background-color: rgb(124, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+
+}
+
+.logout:hover {
+    scale: 1.1;
+    background-color: rgb(142, 1, 1);
+}
+
+.logout>a {
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding-top: 11%;
+}
+
+.btnSubmit {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnSubmit>div>input {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: 0.5px dashed blue;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btnSubmit>div>input:hover {
+    color: rgb(3, 165, 3);
+    font-size: 1.01em;
+}
+
+.btnBack {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+}
+
+.arrow {
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+.arrow:hover {
+    width: 2em;
+    height: 2em;
+}
+
+.menu {
+    top: 4%;
+    left: 8%;
+    font-size: 2em;
+    font-weight: bold;
+    width: 15%;
+}
+
+.menuItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.menuItems>a {
+    text-decoration: none;
+    color: white;
+
+}
+.menuItems>a{
+    transition: 0.3s ease-in-out;
+}
+.menuItems>a:hover{
+    color: rgb(255, 172, 172);
+}

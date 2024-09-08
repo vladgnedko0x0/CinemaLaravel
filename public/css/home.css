@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../backgrounds/homeBG.jpg');
+   background-size:auto;
+}
+.menu {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+.menu>.films {
+    margin-left: 250px;
+}
+
+li {
+    list-style: none;
+}
+
+li>a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+a{
+    transition: 0.3s;
+}
+a:hover {
+    color: rgb(117, 117, 197);
+
+}
+.authButtons{
+   position: relative;
+}
+.authUl{
+    position: absolute;
+    top: 28px;
+    left: -30px;
+    background-color: yellow;
+    width: 200px;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.7s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 5;
+}
+
+.authButtons:hover .authUl {
+    height: 150px;
+}
+.authUl>li{
+    padding: 4px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.7s ease-in-out;
+    
+}
+.authUl>li>a{
+   margin-top: 100px;
+    
+}
+.authUl>li:hover{
+    background-color: blue;
+}
+.authUl>li:hover a{
+   color:  yellow;
+}
+
+.menu>div>a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.profileHeader {
+    margin-right: 50px;
+    position: relative;
+    transition: 0.7s ease-in-out;
+}
+.profileHeader:hover .profileName{
+    color: yellow;
+}
+.profileUl{
+    position: absolute;
+    top: 40px;
+    left: -30px;
+    background-color: yellow;
+    width: 200px;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.7s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 5;
+}
+.profileUl>li{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.7s ease-in-out;
+    
+}
+.profileHeader:hover .profileUl {
+    height: 150px;
+}
+.profileUl>li:hover{
+    background-color: blue;
+}
+.profileUl>li:hover a{
+    color: yellow;
+}
+.profileUl>li>a:hover{
+    color: yellow;
+}
+.profileUl>li>a{
+    color: blue;
+    width: 100%;
+    height: 100%;
+}
+.authButtons {
+    display: flex;
+    color: white;
+    font-size: 25px;
+}
+
+.authButtons>li {
+    padding-right: 15px;
+}
+
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.movie{
+    margin-right: 15px;
+    overflow: hidden;
+    height: 250px;
+    border-radius: 10px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+.overblock{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 250px;
+    transition: 0.5s ease-out;
+    background: none;
+    z-index: 0;
+}
+.movie>.movieName{
+    text-align: center;
+    transition: 0.7s ease-out;
+    z-index: 3;
+}
+.movieNameP{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 3;
+}
+.movie:hover .movieName {
+   transform: translateY(calc(-50px - 25%));
+}
+.movie:hover .overblock {
+    background-color: rgba(255, 166, 0, 0.814);
+ }
+
+.movie>.image{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.movie:hover {
+    scale: 1.04;
+    box-shadow: 11px 7px 16px -4px rgba(0, 0, 0, 0.75);
+    transform: rotate(2deg);
+}
+.mainElement>a>img {
+    position: absolute;
+    top: 25px;
+    left: 85px;
+    width:150px;
+}
+.popular>.pDiv{
+    padding-left:5px;
+    padding-right: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 0;
+    background-color: rgb(15, 170, 33);
+    overflow: hidden;
+    z-index: 2;
+    transition: 0.7s ease-in-out;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.popular:hover>.pDiv{
+    height: 20px;
+    width: 110px;
+   
+}
+.baseInformation{
+    width: 100%;
+    height: 100%;
+}
+.parametres{
+    display: none;
+}

@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../backgrounds/homeBG.jpg');
+    background-size: auto;
+}
+
+.registrate-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 1%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(30deg, rgba(255, 255, 255, 1) 0%, rgba(241, 241, 241, 1) 33%, rgba(215, 215, 215, 1) 100%);
+    width: 60%;
+    height: 370px;
+    border-radius: 15px;
+    scale: 1.3;
+}
+
+.form>form {
+    width: 90%;
+    height: 70%;
+}
+
+.form-field {
+    margin-bottom: 15px;
+
+}
+
+.form-label {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form-field>input {
+    border-radius: 5px;
+    border: 1px solid blue;
+    padding-left: 8px;
+    height: 30px;
+    transition: 0.4s ease-in-out;
+    outline: none;
+}
+
+.form-field>input:hover {
+    background-color: rgb(240, 232, 232);
+    scale: 1.05;
+}
+
+.submit>input {
+    padding: 0;
+    margin: 0;
+    width: 80px;
+    height: 40px;
+    background: rgb(63, 94, 251);
+    transition: 0.4s ease-in-out;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.submit>input:hover {
+    scale: 1.2;
+    width: 90px;
+}
+
+.submit {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.passwordError {
+    font-size: 14px;
+    color: red;
+}
+
+.block {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.anyTypeOfRegistration {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 10%;
+
+}
+
+.authType {
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.authType.google{
+    border: 2px solid rgb(142, 22, 22);
+}
+.authType.git{
+    border: 2px solid black;
+}
+.authType>a {
+    text-decoration: none;
+    width: 100%;
+    background-color: transparent;
+    height: 100%;
+    line-height: 200%;
+    font-weight: bold;
+    color: rgb(54, 54, 252);
+    transition: 0.3s ease-in-out;
+}
+.authType.google>a {
+    color: green;
+    transition: 0.3s ease-in-out;
+}
+.authType.git>a {
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+.authType.git>a:hover {
+    color: white;
+    background-color:  black;
+}
+.authType.google>a:hover {
+    color: white;
+    background-color: rgb(142, 22, 22);
+}
+.or{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(0, 0, 0, 0.712);
+}
+.btnBack {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+}
+.arrow {
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+.arrow:hover {
+    width: 2em;
+    height: 2em;
+}
+
+.menu {
+    top: 4%;
+    left: 8%;
+    font-size: 2em;
+    font-weight: bold;
+    width: 15%;
+}
+
+.menuItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.menuItems>a {
+    text-decoration: none;
+    color: white;
+
+}
+.menuItems>a{
+    transition: 0.3s ease-in-out;
+}
+.menuItems>a:hover{
+    color: rgb(255, 172, 172);
+}
